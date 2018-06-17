@@ -7,7 +7,7 @@ module.exports = {
         release: "./release",
     },
     tasks: {
-        css : ["sass","cssmin","clean:cssdust"],
+        css : ["sass","cssmin"],
         html: ["ect","htmlmin"],
         image: ["imagemin"],
 
@@ -17,7 +17,6 @@ module.exports = {
 
     clean: {
         release: ["<%= path.release %>/*"],
-        cssdust: ["<%= path.release %>/**/*.map"],
     },
 
     connect: {
@@ -87,6 +86,7 @@ module.exports = {
         css: {
             options: {
                 style: "expanded",
+                sourcemap: "none",
             },
             files: {
                 "<%= path.release %>/main.css": "<%= path.src %>/main.scss"
