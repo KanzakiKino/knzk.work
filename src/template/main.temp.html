@@ -1,0 +1,34 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <title><% content "title" %> - <%- @project.title %></title>
+        <meta name="description" content="<%- @project.description %>">
+        <meta name="author" content="<%- @project.author %>">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="/main.css">
+
+        <!--[if lt IE 9]>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+        <div id="header">
+            <div class="text">
+                <span class="logo"><%- @project.title %></span>
+                <h1 class="title"><% content "title" %></h1>
+            </div>
+            <div class="rect"></div>
+        </div>
+        <div id="contents">
+            <% content "main" %>
+        </div>
+        <div id="footer">
+        </div>
+    </body>
+</html>
