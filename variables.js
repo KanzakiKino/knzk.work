@@ -15,6 +15,7 @@ module.exports = {
         {
             name: "Works",
             url : "/works/",
+            image: "/icon/works.png",
         },
     ],
 };
