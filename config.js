@@ -77,7 +77,7 @@ module.exports = {
         image: {
             expand: true,
             cwd: "<%= path.src %>",
-            src: ["**/*.{png|jpg|gif}"],
+            src: ["**/*.png"],
             dest: "<%= path.release %>",
         },
     },
