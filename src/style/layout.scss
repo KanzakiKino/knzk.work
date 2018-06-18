@@ -128,4 +128,19 @@ body
 
 #footer
 {
+    margin-top: 10px;
+    border-top: solid 1px #eee;
+    text-align: center;
+
+    .sns {
+        position: relative;
+        left: 50%;
+        float: left;
+
+        li {
+            position: relative;
+            left: -50%;
+            float: left;
+        }
+    }
 }
