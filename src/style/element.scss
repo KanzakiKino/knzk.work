@@ -2,6 +2,12 @@
 
 @import "./template.scss";
 
+.block-center
+{
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
 .float-left
 {
     float: left;
@@ -15,7 +21,7 @@
     clear: both;
 }
 
-.card
+.card-normal
 {
     width: calc(50% - 22px);
     @include tablet ()
@@ -31,19 +37,80 @@
 
     .icon {
         display: block;
-        width: 30%;
+        width: 25%;
+        float: left;
         margin: 5px;
         padding: 5px;
+
+        border-radius: 15px;
+
+        @include mobile ()
+        {
+            float: none;
+            margin: 5px auto;
+        }
     }
-    .name {
-        font-size: 2.5em;
+    .content {
+        float: left;
+        margin-left: 5%;
+
+        @include tablet ()
+        {
+            margin-left: 3%;
+        }
+        @include mobile ()
+        {
+            float: none;
+            margin-left: 2%;
+            text-align: center;
+        }
+
+        .name {
+            font-size: 2.5em;
+        }
+        .attr {
+            font-size: 1.5em;
+        }
+        .sns {
+            @include mobile ()
+            {
+                position: relative;
+                left: 50%;
+                float: left;
+
+                li {
+                    position: relative;
+                    left: -50%;
+                    float: left;
+                }
+            }
+        }
     }
-    .attr {
-        font-size: 1.5em;
+}
+.card-big
+{
+    @extend .card-normal;
+
+    width: calc(80% - 22%);
+    @include tablet ()
+    {
+        width: calc(90% - 22px);
     }
 }
 
-.profile
+.sns
 {
-    margin: 5px auto;
+    margin: 5px;
+    li {
+        float: left;
+        margin-right: 3px;
+    }
+    img {
+        width: 2em;
+
+        transition: opacity, 0.5s;
+        &:hover {
+            opacity: 0.5;
+        }
+    }
 }

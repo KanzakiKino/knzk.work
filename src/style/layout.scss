@@ -8,6 +8,11 @@
     font-family: Montserrat, sans-serif;
 }
 
+body
+{
+    min-width: $breakpoint-mobile/2;
+}
+
 #header
 {
     width: 100%;
@@ -80,7 +85,7 @@
         text-align: center;
         text-decoration: none;
 
-        transition: background-color, 1s;
+        transition: background-color, 0.5s;
         &:hover {
             background-color: #f8f8f8;
         }

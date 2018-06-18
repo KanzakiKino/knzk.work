@@ -21,7 +21,15 @@ module.exports = {
     sns: [
         {
             url: "https://twitter.com/knzk_work",
-            image: "",
+            image: "/icon/twitter.png",
+        },
+        {
+            url: "https://github.com/KanzakiKino",
+            image: "/icon/github.png",
+        },
+        {
+            url: "https://www.youtube.com/channel/UCR_YxYbOl-SqVbXNzOLMn2w",
+            image: "/icon/youtube.png",
         }
     ],
 };
