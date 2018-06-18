@@ -18,4 +18,10 @@ module.exports = {
             image: "/icon/works.png",
         },
     ],
+    sns: [
+        {
+            url: "https://twitter.com/knzk_work",
+            image: "",
+        }
+    ],
 };

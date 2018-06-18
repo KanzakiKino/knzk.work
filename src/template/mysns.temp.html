@@ -1,0 +1,5 @@
+<ul class="sns">
+    <% for item in @sns: %>
+    <li><a href="<%= item.url %>" target="_blank"><img src="<%- item.image %>"></a></li>
+    <% end %>
+</ul>
