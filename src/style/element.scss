@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+@import "./template.scss";
+
+.float-left
+{
+    float: left;
+}
+.float-right
+{
+    float: right;
+}
+.float-clear
+{
+    clear: both;
+}
+
+.card
+{
+    width: calc(50% - 22px);
+    @include tablet ()
+    {
+        width: calc(100% - 22px);
+    }
+
+    margin: 5px;
+    padding: 5px;
+    border: solid 1px #ddd;
+
+    background-color: #f8f8f8;
+
+    .icon {
+        display: block;
+        width: 30%;
+        margin: 5px;
+        padding: 5px;
+    }
+    .name {
+        font-size: 2.5em;
+    }
+    .attr {
+        font-size: 1.5em;
+    }
+}
+
+.profile
+{
+    margin: 5px auto;
+}

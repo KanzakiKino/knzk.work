@@ -1,3 +1,8 @@
+@charset "utf-8";
+
+$breakpoint-tablet: 1080px;
+$breakpoint-mobile: 640px;
+
 @mixin max-screen ($bpt)
 {
     @media screen and (max-width: $bpt) {
@@ -7,6 +12,21 @@
 @mixin min-screen ($bpt)
 {
     @media screen and (min-width: $bpt) {
+        @content;
+    }
+}
+
+@mixin tablet ()
+{
+    @include max-screen ( $breakpoint-tablet )
+    {
+        @content;
+    }
+}
+@mixin mobile ()
+{
+    @include max-screen ( $breakpoint-mobile )
+    {
         @content;
     }
 }

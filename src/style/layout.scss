@@ -3,9 +3,6 @@
 @import "./template.scss";
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
-$breakpoint-tablet: 980px;
-$breakpoint-mobile: 640px;
-
 *
 {
     font-family: Montserrat, sans-serif;
@@ -99,7 +96,7 @@ $breakpoint-mobile: 640px;
 
             opacity: 0.5;
 
-            @include max-screen ( $breakpoint-tablet ) {
+            @include tablet () {
                 display: none;
             }
         }
@@ -108,7 +105,7 @@ $breakpoint-mobile: 640px;
 
 #contents
 {
-    width: 60%;
+    width: 70%;
     clear: both;
 
     margin: 5px;
@@ -116,10 +113,10 @@ $breakpoint-mobile: 640px;
     margin-right: auto;
     padding: 5px;
 
-    @include max-screen ( $breakpoint-tablet ) {
+    @include tablet () {
         width: 75%;
     }
-    @include max-screen ( $breakpoint-mobile ) {
+    @include mobile () {
         width: 90%;
     }
 }
