@@ -3,7 +3,7 @@
 module.exports = [
     {
         "date": "2018/06/21",
-        "content": "Added works page.",
+        "content": "Added <a href=\"/works\">works</a> page.",
     },
     {
         "date": "2018/06/21",
