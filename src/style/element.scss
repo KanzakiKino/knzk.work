@@ -23,7 +23,7 @@
 
 .card-normal
 {
-    width: calc(50% - 22px);
+    width: calc(100% - 22px);
     @include tablet ()
     {
         width: calc(100% - 22px);
@@ -32,6 +32,7 @@
     margin: 5px;
     padding: 5px;
     border: solid 1px #ddd;
+    border-radius: 5px;
 
     background-color: #f8f8f8;
 
@@ -95,6 +96,34 @@
     @include tablet ()
     {
         width: calc(90% - 22px);
+    }
+}
+
+.column
+{
+    float: left;
+    width: 50%;
+
+    @include tablet ()
+    {
+        width: 100%;
+    }
+}
+
+ul.notify
+{
+    list-style-type: none;
+
+    li {
+        padding: 10px;
+        border-top: dotted 1px gray;
+    }
+    .notify-date {
+        font-size: 80%;
+    }
+    .notify-content {
+        width: auto;
+        text-align: center;
     }
 }
 
