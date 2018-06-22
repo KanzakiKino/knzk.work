@@ -6,6 +6,7 @@ module.exports = {
         description: "",
         author: "KanzakiKino",
     },
+    notifications: require( "./notifications.js" ),
     menu: [
         {
             name: "Home",

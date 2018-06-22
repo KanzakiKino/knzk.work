@@ -14,12 +14,20 @@
     <div class="float-clear"></div>
 </div>
 
-<div class="float-left card-normal">
-    <h2>Notifications</h2>
-    <p style="text-align:center;margin:10px;">This server is in maintenance.</p>
+<div class="column">
+    <div class="card-normal">
+        <h2>Notifications</h2>
+        <ul class="notify">
+            <% for item in @notifications: %>
+            <li><div class="notify-date"><%- item.date %></div><div class="notify-content"><%- item.content %></div></li>
+            <% end %>
+        </ul>
+    </div>
 </div>
-<div class="float-left card-normal">
-    <a class="twitter-timeline" data-height="500" href="https://twitter.com/knzk_work?ref_src=twsrc%5Etfw">Tweets by knzk_work</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<div class="column">
+    <div class="float-left card-normal">
+        <a class="twitter-timeline" data-height="500" href="https://twitter.com/knzk_work?ref_src=twsrc%5Etfw">Tweets by knzk_work</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
 </div>
 <div class="float-clear"></div>
 
