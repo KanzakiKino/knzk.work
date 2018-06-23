@@ -2,14 +2,44 @@
 
 @import "./template.scss";
 
+p.default
+{
+    margin: 10px;
+    line-height: 1.5em;
+}
+ul.default
+{
+    margin-left: 3em;
+    list-style-type: initial;
+}
+dl.default
+{
+    @extend p.default;
+    dt {
+        margin: 5px;
+        margin-left: 1em;
+        line-height: 2em;
+        font-weight: bold;
+    }
+    dd {
+        margin: 5px;
+        margin-left: 2em;
+    }
+}
+
 .block-center
 {
     margin-left: auto !important;
     margin-right: auto !important;
 }
+
 .text-center
 {
     text-align: center;
+}
+.text-small
+{
+    font-size: 0.8rem;
 }
 
 .float-left
@@ -117,7 +147,6 @@
 ul.notify
 {
     list-style-type: none;
-
     li {
         padding: 10px;
         border-top: dotted 1px gray;
