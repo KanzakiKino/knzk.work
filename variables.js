@@ -18,6 +18,11 @@ module.exports = {
             url : "/works/",
             image: "/img/works.png",
         },
+        {
+            name: "Docs",
+            url: "/docs/",
+            image: "/img/docs.png",
+        },
     ],
     sns: [
         {
