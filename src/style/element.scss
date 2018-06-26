@@ -92,16 +92,19 @@ dl.default
     .content {
         float: left;
         margin-left: 5%;
+        width: 65%;
 
         @include tablet ()
         {
             margin-left: 3%;
+            width: 67%;
         }
         @include mobile ()
         {
             float: none;
             margin-left: 2%;
             text-align: center;
+            width: 100%;
         }
 
         .name {
