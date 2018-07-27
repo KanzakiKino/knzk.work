@@ -2,19 +2,19 @@
 
 @import "./template.scss";
 
-p.default
+p
 {
     margin: 10px;
     line-height: 1.5em;
 }
-ul.default
+ul
 {
     margin-left: 3em;
     list-style-type: initial;
 }
-dl.default
+dl
 {
-    @extend p.default;
+    @extend p;
     dt {
         margin: 5px;
         margin-left: 1em;
@@ -170,6 +170,8 @@ ul.notify
 .sns
 {
     margin: 5px;
+    list-style-type: none;
+
     li {
         float: left;
         margin-right: 3px;
